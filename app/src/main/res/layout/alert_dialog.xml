@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <com.versatilemobitech.VeeZee.views.MontserratTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            app:font_type="semibold"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <com.versatilemobitech.VeeZee.views.MontserratTextView
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            app:font_type="medium"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_11sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/light_ash1" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/txtOk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:ems="3"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/_5sdp"
+                android:text="OK"
+                app:font_type="semibold"
+                android:textColor="#3780D5"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

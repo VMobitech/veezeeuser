@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.versatilemobitech.VeeZee.Activities.VeeZeeCreditsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:background="@android:color/white"
+        android:elevation="@dimen/_3sdp"
+        android:padding="@dimen/_30sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_view"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_view_coin1"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_13sdp"
+                    android:src="@drawable/ic_coin" />
+
+                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="V"
+                    android:gravity="center"
+                    android:textColor="#D49700"
+                    app:font_type="semibold"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_alignRight="@id/image_view_coin1"
+                    android:layout_alignLeft="@id/image_view_coin1"/>
+            </RelativeLayout>
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/txt_credit_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="21,500"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:font_type="semibold" />
+        </LinearLayout>
+
+        <com.versatilemobitech.VeeZee.views.MontserratTextView
+            android:id="@+id/txt_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/Credit_balance"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:font_type="semibold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl"
+        android:background="@color/history">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_history"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:overScrollMode="never" />
+
+        <com.versatilemobitech.VeeZee.views.MontserratTextView
+            android:id="@+id/txt_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/montserrat"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/transaction_history"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:font_type="semibold" />
+        <com.versatilemobitech.VeeZee.views.MontserratTextView
+            android:id="@+id/txt_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/montserrat"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            android:gravity="center"
+           android:layout_centerInParent="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_14sdp"
+            app:font_type="semibold" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

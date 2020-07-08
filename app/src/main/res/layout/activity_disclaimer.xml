@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_3sdp"
+    tools:context="com.versatilemobitech.VeeZee.Activities.DisclaimerActivity">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolBar"/>
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_disclaimer"
+        app:layout_constraintTop_toBottomOf="@id/toolBar"
+        android:text="@string/discliamer_data"
+        android:textSize="@dimen/_12sdp"
+        app:font_type="medium"
+        android:textColor="@color/black"
+        android:padding="@dimen/_5sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

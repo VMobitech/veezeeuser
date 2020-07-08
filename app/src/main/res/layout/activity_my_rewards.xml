@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.versatilemobitech.VeeZee.Activities.MyRewardsActivity">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolBar"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/toolBar"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:overScrollMode="never"
+        android:id="@+id/rv_my_reward"/>
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_nodata"
+        android:layout_centerInParent="true"
+        android:text="No data found"
+        app:font_type="semibold"
+        android:visibility="gone"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorAccent"/>
+
+
+</RelativeLayout>

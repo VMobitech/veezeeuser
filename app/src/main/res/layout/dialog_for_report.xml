@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.versatilemobitech.VeeZee.views.MontserratTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_description"
+            android:text="@string/report_an_issue"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/_14sdp"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            app:font_type="semibold"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:id="@+id/img_close"
+            android:src="@drawable/ic_cancel"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_below="@id/img_close"
+            android:id="@+id/ll"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/dialog_report_background">
+
+            <com.versatilemobitech.VeeZee.views.MontserratEditText
+                android:id="@+id/edt_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="top"
+                android:enabled="true"
+                android:hint="Type your issue here..."
+                android:inputType="textCapSentences"
+                android:padding="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                app:font_type="medium" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_ash1"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/view"
+            android:layout_below="@id/ll"/>
+        <com.versatilemobitech.VeeZee.views.MontserratTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_submit"
+            android:text="@string/submit"
+            app:font_type="semibold"
+            android:layout_below="@id/view"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_8sdp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

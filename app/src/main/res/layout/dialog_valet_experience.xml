@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/text_view_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/Valet_experience"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:font_type="semibold" />
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_description"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginTop="-4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_2sdp"
+                android:weightSum="3">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_view_driver"
+                    android:layout_width="20dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_user" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical">
+
+                    <com.versatilemobitech.VeeZee.views.MontserratTextView
+                        android:id="@+id/txt_drivername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John Wasi"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="normal"
+                        app:font_type="regular" />
+
+                    <com.versatilemobitech.VeeZee.views.MontserratTextView
+                        android:id="@+id/text_view_mobile_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="xxxxxx1456"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+                        app:font_type="regular" />
+
+                    <com.versatilemobitech.VeeZee.views.MontserratTextView
+                        android:id="@+id/txt_car_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="# 962345"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/_11sdp"
+                        app:font_type="medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.versatilemobitech.VeeZee.views.MontserratTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Token"
+                        android:textColor="@color/black"
+                        app:font_type="semibold" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img_vault"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:padding="-10dp"
+                            android:src="@drawable/ic_group_661" />
+
+                        <com.versatilemobitech.VeeZee.views.MontserratTextView
+                            android:id="@+id/txt_token_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="22"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_type="medium" />
+                    </FrameLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/txt_thanks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:gravity="center"
+                android:padding="@dimen/_1sdp"
+                android:text="@string/Thanks_john"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:font_type="semibold" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/txt_tip_deduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_thanks"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/tip"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:font_type="medium"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_tip_deduction"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                    android:id="@+id/txt_amount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/boarded_background"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:text="₹ 10"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_14sdp"
+                    app:font_type="semibold" />
+
+                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                    android:id="@+id/txt_amount2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/boarded_background"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:text="₹ 20"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_14sdp"
+                    app:font_type="semibold" />
+
+                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                    android:id="@+id/txt_amount3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/boarded_background"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:text="₹ 50"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_14sdp"
+                    app:font_type="semibold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_mode"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/paytm" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:background="@drawable/boarded_with_ash_background"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_3sdp">
+
+                    <com.versatilemobitech.VeeZee.views.MontserratTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="₹"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"
+                        app:font_type="semibold" />
+
+                    <com.versatilemobitech.VeeZee.views.MontserratEditText
+                        android:id="@+id/txt_total_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:digits="1234567890"
+                        android:hint="0"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_type="semibold"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@id/ll3"
+                android:background="@color/light_ash1" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/txt_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll3"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="@string/Share_your"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:font_type="semibold" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/txt_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_share"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="Terrible"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:font_type="medium" />
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_rating"
+                android:layout_centerInParent="true"
+                android:numStars="5"
+                android:rating="1"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:stepSize="1" />
+
+          <!--  <HorizontalScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarThumbHorizontal="@null"
+                android:layout_below="@id/rating_bar">-->
+
+            <!--</HorizontalScrollView>-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ll4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rating_bar"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal">
+                <!--<androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rv_ratting"
+                        android:orientation="horizontal"/>-->
+
+                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                    android:id="@+id/text_view1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/boarded_with_ash_background"
+                    android:padding="@dimen/_7sdp"
+                    android:text="Key Misplacement"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9sdp"
+                    app:layout_constraintEnd_toStartOf="@+id/text_view2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!--<View
+                    android:id="@+id/divider"
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@color/colorAccent"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                    android:id="@+id/text_view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/boarded_with_ash_background"
+                    android:padding="@dimen/_7sdp"
+                    android:text="Delay in Pick Up/ Drop Off"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9sdp"
+                    app:layout_constraintStart_toEndOf="@+id/text_view1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                    android:id="@+id/text_view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/boarded_with_ash_background"
+                    android:gravity="center"
+                    android:padding="@dimen/_7sdp"
+                    android:text="Vehicle Handling"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view1" />
+
+                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                    android:id="@+id/text_view4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/boarded_with_ash_background"
+                    android:gravity="center"
+                    android:padding="@dimen/_7sdp"
+                    android:text="Valet Attitude"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9sdp"
+                    app:layout_constraintStart_toEndOf="@+id/text_view3"
+                    app:layout_constraintTop_toBottomOf="@id/text_view2" />
+
+                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                    android:id="@+id/text_view5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/boarded_with_ash_background"
+                    android:gravity="center"
+                    android:padding="@dimen/_7sdp"
+                    android:text="VeeZee App"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9sdp"
+                    app:layout_constraintStart_toEndOf="@id/text_view4"
+                    app:layout_constraintTop_toBottomOf="@id/text_view2" />
+
+                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                    android:id="@+id/text_view6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/boarded_with_ash_background"
+                    android:gravity="center"
+                    android:padding="@dimen/_7sdp"
+                    android:text="Other"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/txt_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll4"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/button_background"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/Continue"
+                android:textColor="@color/light_white"
+                android:textSize="@dimen/_14sdp"
+                app:font_type="semibold" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/txt_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_continue"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/skip"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_14sdp"
+                app:font_type="medium" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_5sdp"
+        android:text="Select Image"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textViewCamera"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Camera"
+        android:textColor="#000000"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"></View>
+
+    <TextView
+        android:id="@+id/textViewGallery"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Gallery"
+        android:textColor="#000000"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorAccent"></View>
+
+</LinearLayout>

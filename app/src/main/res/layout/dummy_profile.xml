@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_toolbar"
+        android:id="@+id/toolbar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_30sdp">
+
+            <com.versatilemobitech.VeeZee.views.MontserratEditText
+                android:id="@+id/edit_text_gender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:font_type="semibold"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_name"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_name"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_gender" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratEditText
+                android:id="@+id/edit_text_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                app:font_type="semibold"
+                android:focusableInTouchMode="true"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_dob"
+                app:layout_constraintStart_toStartOf="@+id/text_view_email"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_email" />
+
+            <ImageView
+                android:id="@+id/image_view_female"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_view_male"
+                app:layout_constraintEnd_toStartOf="@+id/view3"
+                app:layout_constraintTop_toTopOf="@+id/image_view_male"
+                app:srcCompat="@drawable/ic_femalenew" />
+
+            <ImageView
+                android:id="@+id/image_view_male"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                app:layout_constraintEnd_toEndOf="@+id/view4"
+                app:layout_constraintTop_toTopOf="@+id/edit_text_gender"
+                app:srcCompat="@drawable/ic_male_new" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="#999999"
+                app:layout_constraintBottom_toBottomOf="@id/image_view_male"
+                app:layout_constraintEnd_toStartOf="@+id/image_view_male"
+                app:layout_constraintTop_toTopOf="@+id/image_view_male" />
+            <View
+                android:id="@+id/view4"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="#999999"
+                app:layout_constraintBottom_toBottomOf="@id/image_view_other"
+                app:layout_constraintEnd_toStartOf="@+id/image_view_other"
+                app:layout_constraintTop_toTopOf="@+id/image_view_other" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratEditText
+                android:id="@+id/edit_text_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:maxLength="25"
+                android:focusableInTouchMode="true"
+                android:inputType="textNoSuggestions|textCapWords"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:digits="1234567890qwertyuioplkjhgfdsazxcvbnmMNBVCXZASDFGHJKLPOIUYTREWQ "
+                android:textSize="@dimen/_14sdp"
+                app:font_type="semibold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/text_view_name"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_name" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratEditText
+                android:id="@+id/edit_text_dob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="textNoSuggestions"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:font_type="semibold"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_gender"
+                app:layout_constraintStart_toStartOf="@+id/text_view_dob"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_dob" />
+
+            <ImageView
+                android:id="@+id/img_calendar"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:src="@drawable/ic_calendar"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_dob"
+                app:layout_constraintTop_toBottomOf="@id/text_view_dob" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratEditText
+                android:id="@+id/edit_text_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_dropdown"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:inputType="textNoSuggestions|textCapWords"
+                android:drawablePadding="@dimen/_3sdp"
+                android:focusable="false"
+                android:textColor="@color/black"
+                app:font_type="semibold"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_email"
+                app:layout_constraintStart_toStartOf="@+id/text_view_state"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_state" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratEditText
+                android:id="@+id/edit_text_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_dropdown"
+                android:ems="10"
+                android:drawablePadding="@dimen/_3sdp"
+                android:inputType="textNoSuggestions"
+                android:focusable="false"
+                android:textColor="@color/black"
+                app:font_type="semibold"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_state"
+                app:layout_constraintStart_toStartOf="@+id/text_view_city"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_city" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/text_view_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:text="NAME"
+                android:textSize="@dimen/_10sdp"
+                app:font_type="semibold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/text_view_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="GENDER"
+                android:textSize="@dimen/_10sdp"
+                app:font_type="semibold"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_name"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_name" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/text_view_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="DATE OF BIRTH"
+                app:font_type="semibold"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_gender"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_gender" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/text_view_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="EMAIL"
+                android:textSize="@dimen/_10sdp"
+                app:font_type="semibold"
+                app:layout_constraintStart_toStartOf="@+id/edt_mobile_number"
+                app:layout_constraintTop_toBottomOf="@+id/edt_mobile_number" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/text_view_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="STATE"
+                android:textSize="@dimen/_10sdp"
+                app:font_type="semibold"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_email"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_email" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/text_view_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="CITY"
+                android:textSize="@dimen/_10sdp"
+                app:font_type="semibold"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_state"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_state" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/text_view_proceed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/Proceed"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp"
+                app:font_type="semibold"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_city"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_city"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_city" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/txt_mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="MOBILE NUMBER"
+                android:textSize="@dimen/_10sdp"
+                app:font_type="semibold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.01"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_dob"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_dob" />
+
+            <com.versatilemobitech.VeeZee.views.MontserratEditText
+                android:id="@+id/edt_mobile_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                app:font_type="semibold"
+                android:hint=" "
+                android:tag="+91 "
+                android:digits="0987654321"
+                android:textSize="@dimen/_14sdp"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_dob"
+                app:layout_constraintStart_toStartOf="@+id/txt_mobile_number"
+                app:layout_constraintTop_toBottomOf="@+id/txt_mobile_number" />
+
+            <ImageView
+                android:id="@+id/image_view_other"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="6dp"
+                android:paddingBottom="@dimen/_4sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_view_male"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_gender"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/image_view_male"
+                app:layout_constraintTop_toTopOf="@+id/edit_text_gender"
+                app:srcCompat="@drawable/ic_other_new" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

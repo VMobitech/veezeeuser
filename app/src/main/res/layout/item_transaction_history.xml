@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:weightSum="1">
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:id="@+id/text_view_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_date"
+        android:gravity="center"
+        android:textSize="@dimen/_10sdp"
+        app:font_type="semibold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:padding="@dimen/_2sdp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:src="@drawable/ic_line_circle" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/plain_background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_view_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_coin"
+                />
+                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignStart="@id/image_view_coin"
+                    android:text="V"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textColor="#D49700"
+                    android:gravity="center"
+                    app:font_type="semibold"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_alignEnd="@id/image_view_coin"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_add_coins"
+                android:text="10 Added"
+                android:textColor="@color/green"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                app:font_type="semibold"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <com.versatilemobitech.VeeZee.views.MontserratTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_money_type"
+            android:text="via PayTM"
+            android:textSize="@dimen/_11sdp"
+            app:font_type="semibold"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_28sdp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

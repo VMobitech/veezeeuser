@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customdialog"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_20sdp"
+    android:layout_marginEnd="@dimen/_20sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:padding="@dimen/_5sdp"
+    android:maxHeight="@dimen/_200sdp"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_corners_dialog">
+
+
+  <ListView
+      android:overScrollMode="never"
+      android:scrollbars="none"
+      android:id="@+id/dialogNationality_listview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+</LinearLayout>

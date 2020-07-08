@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bt_home"
+        android:title="@string/btm_home"
+        app:iconTint="@color/zxing_transparent"
+        android:icon="@drawable/ic_deal_2"/>
+
+    <item
+        android:id="@+id/bt_partner"
+        android:title="@string/btm_partners"
+        android:icon="@drawable/shakehand"/>
+
+    <item
+        android:id="@+id/bt_cars"
+        android:title="@string/btm_cars"
+        android:icon="@drawable/ic_car"/>
+
+    <item
+        android:id="@+id/bt_rewards"
+        android:title="@string/btm_rewards"
+        android:icon="@drawable/ic_rewards"/>
+    <item
+        android:id="@+id/bt_wallet"
+        android:title="@string/btm_wallet"
+        android:icon="@drawable/ic_vault"/>
+
+</menu>

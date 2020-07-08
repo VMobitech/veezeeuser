@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:id="@+id/text_view_wallet_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_24sdp"
+        android:background="@drawable/rect_bg"
+        android:paddingLeft="@dimen/_25sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:text="0"
+        app:font_type="semibold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_view_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_24sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_wallet_amount"
+        app:layout_constraintStart_toStartOf="@+id/text_view_wallet_amount"
+        app:layout_constraintTop_toTopOf="@+id/text_view_wallet_amount"
+        android:src="@drawable/ic_coin" />
+
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:id="@+id/text_view_credits_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="V"
+        android:textColor="#D49700"
+        app:font_type="bold"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_coin"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_coin"
+        app:layout_constraintStart_toStartOf="@+id/image_view_coin"
+        app:layout_constraintTop_toTopOf="@+id/image_view_coin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

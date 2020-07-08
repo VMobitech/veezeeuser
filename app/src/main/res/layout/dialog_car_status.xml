@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/carStarusContainer"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_height="@dimen/_160sdp"
+    android:minHeight="@dimen/_160sdp">
+
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/text_view_token"
+        android:text="Token"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        app:font_type="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/img_vault"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_token"
+        app:layout_constraintStart_toStartOf="@+id/text_view_token"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_token"
+        app:srcCompat="@drawable/ic_casino_token" />
+
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:id="@+id/txt_token_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2098"
+        android:textColor="@color/colorAccent"
+        app:font_type="semibold"
+        android:gravity="center"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_vault"
+        app:layout_constraintEnd_toEndOf="@+id/img_vault"
+        app:layout_constraintStart_toStartOf="@+id/img_vault"
+        app:layout_constraintTop_toTopOf="@+id/img_vault" />
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toEndOf="@+id/text_view_token"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cancel" />
+
+    <ImageView
+        android:id="@+id/image_view_car"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_token"
+        app:srcCompat="@drawable/car_placeholder" />
+
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:id="@+id/txt_car_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_3sdp"
+        android:text="TS 07 SD 4009"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        app:font_type="semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_car" />
+
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:id="@+id/txt_noOfcars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:font_type="medium"
+        android:text="3 Cars ahead of you"
+        android:textSize="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_car_no" />
+
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/txt_time"
+        android:text=" "
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"
+        app:font_type="medium"
+        android:paddingBottom="@dimen/_2sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_noOfcars" />
+
+    <ImageView
+        android:id="@+id/img_call"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_car_no"
+        app:layout_constraintTop_toTopOf="@+id/txt_car_no"
+        app:srcCompat="@drawable/ic_call_colored" />
+
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/image_view_refresh"
+        android:layout_gravity="center"
+        android:text="@string/REFRESH"
+        app:font_type="semibold"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_time"
+        android:layout_marginBottom="5dp"
+        android:paddingBottom="@dimen/_5sdp" />
+
+    <TextView
+        android:id="@+id/dummy_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="TextView"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/img_close"
+        app:layout_constraintStart_toEndOf="@+id/text_view_token"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

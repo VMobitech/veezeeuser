@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.versatilemobitech.VeeZee.Activities.ClickToProceedActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/crd_valet"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circle_white"
+                android:elevation="@dimen/_15sdp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_deal_colored"
+                    android:tint="@color/colorAccent" />
+            </LinearLayout>
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/txt_veezee_valet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/veezee_valet"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:font_type="semibold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/crd_vault"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:elevation="@dimen/_15sdp"
+                android:background="@drawable/circle_white"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_vault_colored"
+                    android:tint="@color/colorAccent" />
+            </LinearLayout>
+
+            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                android:id="@+id/txt_veezee_vault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/crd_vault"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/veezee_vault"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:font_type="semibold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:height="?actionBarSize"
+        android:gravity="center"
+        android:text="Click to proceed"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        app:font_type="semibold" />
+
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/error"
+        android:background="@color/red"
+        app:font_type="regular"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@color/white"
+        android:layout_below="@id/title"
+        android:visibility="gone"
+        android:text="Please verify your Email ID to use valet and vault services"
+        />
+
+
+</RelativeLayout>

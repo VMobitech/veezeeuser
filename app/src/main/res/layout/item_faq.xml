@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Lorem ipsum dolor sit amet"
+        android:textColor="@color/black"
+        android:drawableTint="@color/colorAccent"
+        app:font_type="semibold"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_13sdp"
+        android:padding="@dimen/_5sdp"/>
+    <ImageView
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:id="@+id/img_down"
+        android:src="@drawable/ic_down_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tint="@color/colorAccent"
+        />
+
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:id="@+id/txt_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/discliamer_data"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="visible"
+        app:font_type="semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_item" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

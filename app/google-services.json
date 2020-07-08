@@ -1,0 +1,162 @@
+{
+  "project_info": {
+    "project_number": "422321735958",
+    "firebase_url": "https://veezee-user.firebaseio.com",
+    "project_id": "veezee-user",
+    "storage_bucket": "veezee-user.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422321735958:android:e2b37c4fdd8e025e526837",
+        "android_client_info": {
+          "package_name": "com.versatilemobitech.veezee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422321735958-tu3cvr4dkc4l8a02refdeh0udit395ig.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.versatilemobitech.veezee",
+            "certificate_hash": "a882abede9a0d97874aee60cba9a3af66dff7806"
+          }
+        },
+        {
+          "client_id": "422321735958-6sa4tukr5kt1hplnbpv65ui2u88nan4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.versatilemobitech.veezee",
+            "certificate_hash": "0443f7e7b5e6ee78976a76316a6af0d24cba3d66"
+          }
+        },
+        {
+          "client_id": "422321735958-cgg55h88i6f6g9os5rno76fpq03qhh2o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.versatilemobitech.veezee",
+            "certificate_hash": "36a6426b0f0dbb03c3be0772e2c7bf1f889969ba"
+          }
+        },
+        {
+          "client_id": "422321735958-us4aqse9rnc9mfv48m2hf14htkcs6m9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWl_cXRbGq2JyHYxoUap7gNbVXicxLnEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422321735958-ledfcath8hfk2ur6sa5m6hmf7o1tm7jd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "422321735958-cec5lsh7gl6768psanktsgc8is3bgldg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.v-aasistsolutions.VeeZee",
+                "app_store_id": "123456789"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422321735958:android:efcf0aa1dcd35d4e526837",
+        "android_client_info": {
+          "package_name": "com.versatilemobitech.veezeedriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422321735958-m0n0o2f0q2b0su7olc0oaqdpp0gle8p4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.versatilemobitech.veezeedriver",
+            "certificate_hash": "a882abede9a0d97874aee60cba9a3af66dff7806"
+          }
+        },
+        {
+          "client_id": "422321735958-us4aqse9rnc9mfv48m2hf14htkcs6m9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWl_cXRbGq2JyHYxoUap7gNbVXicxLnEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422321735958-ledfcath8hfk2ur6sa5m6hmf7o1tm7jd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "422321735958-cec5lsh7gl6768psanktsgc8is3bgldg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.v-aasistsolutions.VeeZee",
+                "app_store_id": "123456789"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422321735958:android:1b5ec8bbf7f2e290526837",
+        "android_client_info": {
+          "package_name": "com.versatilemobitech.veezeegatekeeper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422321735958-j4shm5cbrf14di0uc7ocpup26vpd35rt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.versatilemobitech.veezeegatekeeper",
+            "certificate_hash": "a882abede9a0d97874aee60cba9a3af66dff7806"
+          }
+        },
+        {
+          "client_id": "422321735958-us4aqse9rnc9mfv48m2hf14htkcs6m9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWl_cXRbGq2JyHYxoUap7gNbVXicxLnEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422321735958-ledfcath8hfk2ur6sa5m6hmf7o1tm7jd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "422321735958-cec5lsh7gl6768psanktsgc8is3bgldg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.v-aasistsolutions.VeeZee",
+                "app_store_id": "123456789"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

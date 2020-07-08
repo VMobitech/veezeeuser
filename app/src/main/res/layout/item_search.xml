@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item">
+
+    <ImageView
+        android:id="@+id/image_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_3sdp"
+        android:src="@drawable/ic_placeholder"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:id="@+id/text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="MOB"
+        android:padding="@dimen/_5sdp"
+        app:font_type="bold"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/image_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/image_location"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_location"
+        android:textSize="@dimen/_10sdp"
+        app:font_type="medium"
+        android:layout_marginStart="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/image_location"
+        app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

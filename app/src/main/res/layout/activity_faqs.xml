@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.versatilemobitech.VeeZee.Activities.HistoryActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/appBar"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_alignTop="@id/text_view_title"
+                    android:id="@+id/linear_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:clickable="true"
+                        android:id="@+id/image_view_back"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/ic_left_black"
+                        android:layout_width="wrap_content"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                    android:id="@+id/text_view_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:text="FAQs"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toRightOf="@id/linear_back"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp"
+                    app:font_type="semibold" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="@style/TabLayoutTextStyle"
+                    app:tabIndicatorHeight="3dp"
+                    app:tabIndicatorColor="@color/colorAccent"
+                    app:tabSelectedTextColor="@android:color/black"
+                    app:tabTextColor="@color/text_ash"
+                    android:elevation="@dimen/_5sdp"
+                    app:tabMode="scrollable"
+                    app:tabTextAppearance="@style/MineCustomTabText"
+                    android:layout_below="@+id/text_view_title"/>
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <!-- View pager to swipe views -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBar"
+        />
+
+</RelativeLayout>

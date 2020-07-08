@@ -1,0 +1,7 @@
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:insetBottom="@dimen/_10sdp"
+    android:drawable="@drawable/ic_maps_colored">
+
+
+</inset>

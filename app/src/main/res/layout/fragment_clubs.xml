@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:clickable="true"
+        android:inputType="textCapSentences"
+        app:iconifiedByDefault="false"
+        android:layoutDirection="rtl"
+        app:queryHint="Search"
+        app:searchIcon="@drawable/ic_search_black"
+        android:background="@drawable/boarded_with_ash_background"
+        android:id="@+id/search_club"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_clubs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_club"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:overScrollMode="never" />
+
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:id="@+id/text_view_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No data found"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_14sdp"
+        android:visibility="gone"
+        app:font_type="semibold" />
+</RelativeLayout>

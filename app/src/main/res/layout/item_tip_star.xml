@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+    android:id="@+id/text_view1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:background="@drawable/boarded_with_ash_background"
+    android:padding="@dimen/_6sdp"
+    android:text="Key Misplacement"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_10sdp" />
+
+</RelativeLayout>

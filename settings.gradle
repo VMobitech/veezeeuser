@@ -1,0 +1,2 @@
+include ':app', ':otpedittext2', ':SpinnerIOS-master'
+rootProject.name='VeeZee'

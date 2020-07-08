@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.versatilemobitech.VeeZee.Activities.CarDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_Brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:background="@drawable/textlines"
+        app:layout_constraintTop_toBottomOf="@id/toolBar">
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/text_field_brand"
+            android:id="@+id/image_view_brandLogo"
+            android:visibility="gone"
+            android:src="@drawable/car_placeholder"/>
+
+        <com.versatilemobitech.VeeZee.views.MontserratEditText
+            android:id="@+id/edit_text_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_down_arrow"
+            android:layout_below="@id/text_field_brand"
+            android:focusable="false"
+            android:background="@null"
+            android:gravity="bottom"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_toRightOf="@id/image_view_brandLogo"
+            android:inputType="text|textNoSuggestions"
+            android:padding="@dimen/_3sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:font_type="semibold"
+             />
+        <com.versatilemobitech.VeeZee.views.MontserratEditText
+            android:id="@+id/edit_text_brand_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_field_brand"
+            android:background="@null"
+            android:visibility="gone"
+            android:focusable="true"
+            android:imeOptions="actionDone"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_toRightOf="@id/image_view_brandLogo"
+            android:inputType="textCapWords|textNoSuggestions"
+            android:padding="@dimen/_3sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:font_type="semibold"
+            />
+
+        <com.versatilemobitech.VeeZee.views.MontserratTextView
+            android:id="@+id/text_field_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_3sdp"
+            android:text="@string/brand"
+            android:textSize="@dimen/_10sdp"
+            app:font_type="semibold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        app:layout_constraintTop_toBottomOf="@id/rl_Brand">
+
+        <com.versatilemobitech.VeeZee.views.MontserratEditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_field_name"
+            android:background="@drawable/textlines"
+            android:drawableRight="@drawable/ic_down_arrow"
+            android:layout_toRightOf="@id/image_view_nameLogo"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:focusable="false"
+            android:gravity="bottom"
+            android:inputType="text|textNoSuggestions"
+            android:padding="@dimen/_3sdp"
+            app:font_type="semibold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+             />
+        <com.versatilemobitech.VeeZee.views.MontserratEditText
+            android:id="@+id/edit_text_name_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_field_name"
+            android:background="@drawable/textlines"
+            android:layout_toRightOf="@id/image_view_nameLogo"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:inputType="textCapWords|textNoSuggestions"
+            android:padding="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:visibility="gone"
+            android:imeOptions="actionDone"
+            app:font_type="semibold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/text_field_name"
+            android:id="@+id/image_view_nameLogo"
+            android:visibility="gone"
+            android:src="@drawable/ic_car"/>
+        <com.versatilemobitech.VeeZee.views.MontserratTextView
+            android:id="@+id/text_field_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_3sdp"
+            android:text="@string/name"
+            app:font_type="semibold"
+            android:textSize="@dimen/_10sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textlines"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        app:layout_constraintTop_toBottomOf="@id/rl_name">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivColorArraow"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/edit_text_color"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/ic_dropdown_new"
+            android:tint="@color/black"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:visibility="visible" />
+
+        <com.versatilemobitech.VeeZee.views.MontserratEditText
+            android:id="@+id/edit_text_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_below="@id/text_field_color"
+            android:layout_toRightOf="@id/image_view_colorLogo"
+            android:background="@null"
+            android:focusable="false"
+            android:gravity="bottom"
+            android:inputType="text|textNoSuggestions"
+            android:paddingTop="@dimen/_3sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            app:font_type="semibold" />
+
+
+        <com.versatilemobitech.VeeZee.views.MontserratEditText
+            android:id="@+id/edit_text_color_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_field_color"
+            android:background="@null"
+            android:visibility="gone"
+            android:imeOptions="actionDone"
+            android:layout_toRightOf="@id/image_view_colorLogo"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:inputType="textCapWords|textNoSuggestions"
+            android:padding="@dimen/_3sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:font_type="semibold"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_33sdp"
+            android:layout_height="@dimen/_33sdp"
+            android:layout_below="@id/text_field_color"
+            android:id="@+id/image_view_colorLogo"
+            android:visibility="gone"
+            android:src="@drawable/car_placeholder"/>
+        <com.versatilemobitech.VeeZee.views.MontserratTextView
+            android:id="@+id/text_field_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_3sdp"
+            android:text="@string/color"
+            app:font_type="semibold"
+            android:textSize="@dimen/_10sdp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        app:layout_constraintTop_toBottomOf="@id/rl_color">
+
+        <com.versatilemobitech.VeeZee.views.MontserratEditText
+            android:id="@+id/edit_text_vehicle_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_field_vehicle_no"
+            android:background="@drawable/textlines"
+            android:inputType="textCapCharacters"
+            android:padding="@dimen/_3sdp"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:digits="QWERTYUIOPASDFGHJKLZXCVBNM1234567890"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:font_type="semibold"
+             />
+
+        <com.versatilemobitech.VeeZee.views.MontserratTextView
+            android:id="@+id/text_field_vehicle_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            app:font_type="semibold"
+            android:text="@string/vehicle_no"
+            android:textSize="@dimen/_10sdp" />
+
+    </RelativeLayout>
+
+    <com.versatilemobitech.VeeZee.views.MontserratTextView
+        android:id="@+id/txt_generateQr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        app:font_type="semibold"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/generate_qr"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/custom_toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

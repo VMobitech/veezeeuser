@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/l6"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                    android:id="@+id/text_view_youhave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="You have"
+                    app:font_type="semibold"
+                    android:textColor="@color/light_white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/img_coin"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/text_view_money"
+                        android:src="@drawable/ic_coin" />
+
+                    <com.versatilemobitech.VeeZee.views.MontserratTextView
+                        android:layout_width="wrap_content"
+                        android:text="V"
+                        android:id="@+id/text_view_v_"
+                        app:font_type="bold"
+                        android:textColor="#D49700"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_9sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_alignTop="@id/img_coin"
+                        android:layout_alignLeft="@id/img_coin"
+                        android:layout_height="wrap_content"/>
+
+                    <com.versatilemobitech.VeeZee.views.MontserratTextView
+                        android:id="@+id/text_view_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="21,500"
+                        app:font_type="semibold"
+                        android:textColor="@color/light_white"
+                        android:textSize="@dimen/_30sdp"
+                         />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/rounded_corners_dialog" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/l6">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                                android:id="@+id/text_view_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/text_view_description"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:text=""
+                                android:textColor="@color/light_ash"
+                                app:font_type="semibold"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <com.versatilemobitech.VeeZee.views.MontserratTextView
+                                android:id="@+id/text_view_description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ll"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp"
+                                app:font_type="semibold"
+                                />
+
+                            <!--<com.versatilemobitech.VeeZee.views.MontserratTextView
+                                android:id="@+id/text_view_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:drawableLeft="@drawable/ic_coin"
+                                android:drawablePadding="@dimen/_10sdp"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/_5sdp"
+                                android:text="149"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16sdp" />-->
+                            <RelativeLayout
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/image_view_coin"
+                                    android:src="@drawable/ic_coin"
+                                    android:layout_centerVertical="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_height="wrap_content"/>
+
+                                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                                    android:layout_width="wrap_content"
+                                    android:text="V"
+                                    android:textColor="#D49700"
+                                    android:textSize="@dimen/_7sdp"
+                                    android:gravity="center"
+                                    app:font_type="bold"
+                                    android:id="@+id/text_view_v"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_alignTop="@id/image_view_coin"
+                                    android:layout_alignBottom="@id/image_view_coin"
+                                    android:layout_alignLeft="@id/image_view_coin"
+                                    android:layout_alignRight="@id/image_view_coin"
+                                    android:layout_height="wrap_content"/>
+
+                                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                                    android:id="@+id/text_view_amount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:text=""
+                                    android:layout_toRightOf="@id/image_view_coin"
+                                    android:textColor="@color/black"
+                                    app:font_type="medium"
+                                    android:textSize="@dimen/_16sdp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_voucher_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ll"
+                            android:layout_marginLeft="@dimen/_16sdp"
+                            android:layout_marginRight="@dimen/_16sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/dotted_background"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.7"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_2sdp">
+
+                                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                                    android:id="@+id/text_view_title_code"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:padding="@dimen/_2sdp"
+                                    app:font_type="semibold"
+                                    android:hint="Voucher Code"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                                    android:id="@+id/text_view_voucher_code"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_6sdp"
+                                    android:text="VEEZEE-cxvb"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:paddingBottom="@dimen/_2sdp"
+                                    app:font_type="semibold" />
+                            </LinearLayout>
+                            <ImageView
+                                android:id="@+id/image_view_copy"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_weight="0.3"
+                                android:layout_gravity="center_vertical"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_copy" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_whats"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/view"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_16sdp"
+                                android:src="@drawable/ic_give_money" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                                    android:id="@+id/txt_title_whats"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_16sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginRight="@dimen/_16sdp"
+                                    android:hint="@string/whats_inside"
+                                    app:font_type="semibold"
+                                    android:textSize="@dimen/_9sdp" />
+
+                                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                                    android:id="@+id/text_view_whatsinside"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_16sdp"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:background="@null"
+                                    android:textColor="@color/black"
+                                    android:drawablePadding="@dimen/_5sdp"
+                                    android:hint=""
+                                    android:textColorHint="@color/black"
+                                    android:textSize="@dimen/_10sdp"
+                                    app:font_type="semibold"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_visit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ll_whats"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_16sdp"
+                                android:src="@drawable/ic_link_symbol" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_16sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginRight="@dimen/_16sdp"
+                                    android:hint="@string/visit"
+                                    app:font_type="semibold"
+                                    android:textSize="@dimen/_9sdp" />
+
+                                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                                    android:id="@+id/text_view_website"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_16sdp"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:autoLink="web"
+                                    android:background="@null"
+                                    android:drawablePadding="@dimen/_5sdp"
+                                    app:font_type="semibold"
+                                    android:text=""
+                                    android:textColorLink="@color/brinjal"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_expair"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ll_visit"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_16sdp"
+                                android:src="@drawable/ic_clock" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_16sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginRight="@dimen/_16sdp"
+                                    android:hint="@string/expair"
+                                    app:font_type="semibold"
+                                    android:textSize="@dimen/_9sdp" />
+
+                                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                                    android:id="@+id/text_view_voucher_expirydate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_16sdp"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:background="@null"
+                                    app:font_type="semibold"
+                                    android:drawablePadding="@dimen/_5sdp"
+                                    android:hint=""
+                                    android:textColorHint="@color/black"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_9sdp"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_note"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"                            android:layout_below="@id/ll_expair"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:src="@drawable/ic_list" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_18sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginRight="@dimen/_16sdp"
+                                    android:hint="@string/note"
+                                    app:font_type="semibold"
+                                    android:textSize="@dimen/_9sdp" />
+
+                                <com.versatilemobitech.VeeZee.views.MontserratTextView
+                                    android:id="@+id/text_view_note"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_18sdp"
+                                    android:layout_marginTop="@dimen/_3sdp"
+                                    android:layout_marginRight="@dimen/_16sdp"
+                                    android:background="@null"
+                                    app:font_type="semibold"
+                                    android:drawablePadding="@dimen/_5sdp"
+                                    android:hint=""
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="@dimen/_10sdp"
+                                     />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <com.versatilemobitech.VeeZee.views.MontserratTextView
+                            android:id="@+id/text_view_proceed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ll_note"
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:layout_marginRight="@dimen/_25sdp"
+                            android:layout_marginBottom="@dimen/_25sdp"
+                            android:background="@drawable/button_background"
+                            android:gravity="center"
+                            android:padding="@dimen/_10sdp"
+                            app:font_type="semibold"
+                            android:text="@string/Proceed"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_2sdp"
+                            android:layout_below="@+id/ll_voucher_code"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@color/light_ash1" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

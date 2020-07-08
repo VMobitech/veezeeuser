@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#898989</color>
+    <color name="colorAccent">#FD6A02</color>
+    <color name="dark_ash">#484848</color>
+    <color name="light_ash">#858585</color>
+    <color name="light_ash1">#D5D5D5</color>
+    <color name="my_rewads">#EFEFEF</color>
+    <color name="light_white">#FDFCFC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="history">#F6F6F6</color>
+    <color name="black">#000000</color>
+    <color name="text_ash">#A8A8A8</color>
+    <color name="brinjal">#8601af</color>
+    <color name="green">#5FC763</color>
+    <color name="red">#EBFF0000</color>
+    <color name="redDark">#EA4335</color>
+    <color name="background">#FAFAFA</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransparent">#AA000000</color>
+</resources>
